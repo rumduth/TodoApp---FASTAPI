@@ -2,6 +2,12 @@
 
 A full-featured Todo application built with FastAPI, featuring user authentication, role-based access control, and a web interface.
 
+## Live Demo
+
+🌐 **Live Application**: [https://todoapp-fastapi-wb8m.onrender.com/](https://todoapp-fastapi-wb8m.onrender.com/)
+
+Try the application online with the test accounts provided below!
+
 ## Features
 
 - **User Authentication**: JWT-based authentication with secure password hashing
@@ -168,6 +174,38 @@ uvicorn main:app --reload
 The application will be available at `http://localhost:8000`
 
 ## Usage
+
+### Test Accounts
+
+For testing purposes, you can create these sample accounts:
+
+**Admin Account:**
+
+```json
+{
+  "email": "duthng98@gmail.com",
+  "username": "duthng98",
+  "first_name": "Duth",
+  "last_name": "Admin",
+  "password": "123456",
+  "role": "admin",
+  "phone_number": "123456"
+}
+```
+
+**User Account:**
+
+```json
+{
+  "email": "duthng99@gmail.com",
+  "username": "duthng99",
+  "first_name": "Duth",
+  "last_name": "User",
+  "password": "123456",
+  "role": "user",
+  "phone_number": "123456789"
+}
+```
 
 ### Web Interface
 

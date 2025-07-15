@@ -22,7 +22,7 @@ class CreateUserRequest(BaseModel):
     last_name: str
     password: str
     role: str
-    phone_number: str = Field(min_length=9)
+    phone_number: str = Field(min_length=6)
 
 
 class Token(BaseModel):
@@ -59,6 +59,7 @@ async def create_user(create_user_request: CreateUserRequest, db: db_dependency)
         is_active=True,
         phone_number=create_user_request.phone_number
     )
+    print(create_user_request)
     try:
         db.add(create_user_model)
         db.commit()
